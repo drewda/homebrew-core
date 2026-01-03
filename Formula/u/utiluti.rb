@@ -15,6 +15,6 @@ class Utiluti < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/utiluti --version")
+    assert_match shell_output("#{bin}/utiluti get-uti txt"), "public.plain-text"
   end
 end
